@@ -36,6 +36,24 @@ p {
   line-height: 1.5;
 }
 
-footer p {
+/* footer p {
   font-size: 16px;
+} */
+
+/* article header p {
+  font-style: italic;
+} */
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+  color: brown;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.name {
+  font-style: italic;
 }
