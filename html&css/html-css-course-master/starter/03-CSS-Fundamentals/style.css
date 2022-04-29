@@ -55,5 +55,15 @@ p {
 }
 
 .name {
-  font-style: italic;
+  font-size: 18px;
+  font-weight: bold;
+  color: blueviolet;
 }
+
+.related{
+  list-style: none;
+}
+
+/* aside ul{
+  list-style: none;
+} */
