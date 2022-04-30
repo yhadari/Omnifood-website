@@ -5,6 +5,7 @@ h4,
 p,
 li {
   font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 h1,
@@ -53,7 +54,6 @@ p {
 #author {
   font-style: italic;
   font-size: 18px;
-  color: brown;
 }
 
 #copyright {
@@ -63,7 +63,7 @@ p {
 .name {
   font-size: 18px;
   font-weight: bold;
-  color: blueviolet;
+  color: rgb(162, 22, 22);
 }
 
 .related {
@@ -73,3 +73,25 @@ p {
 /* aside ul{
   list-style: none;
 } */
+
+.main-header {
+  background-color: #ddd;
+}
+
+aside {
+  background-color: #ddd;
+  border-top: 5px solid rgba(44, 2, 2, 0.54);
+  border-bottom: 5px solid rgba(44, 2, 2, 0.54);
+}
+
+/* body {
+  background-color: beige;
+} */
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:nth-child(4) {
+  color: rgb(34, 255, 0);
+}
