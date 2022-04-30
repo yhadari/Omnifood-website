@@ -105,6 +105,22 @@ li:nth-child(even) {
   color: rgb(159, 226, 43);
 } */
 
-article p:last-child{
+/* Misconception: this won't work! */
+article p:first-child {
   color: rgb(255, 0, 132);
+}
+
+article p:last-child {
+  color: rgb(255, 0, 132);
+}
+
+/* styling links */
+
+/* a {
+  color: red;
+} */
+
+a:any-link {
+  color: #1098ad;
+  text-decoration: none;
 }
