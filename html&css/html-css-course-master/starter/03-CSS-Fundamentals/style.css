@@ -13,6 +13,7 @@ h2,
 h3 {
   color: rgb(12, 130, 189);
 }
+
 h1 {
   font-size: 26px;
   text-transform: uppercase;
@@ -92,6 +93,18 @@ li:first-child {
   font-weight: bold;
 }
 
-li:nth-child(4) {
-  color: rgb(34, 255, 0);
+li:last-child {
+  color: aquamarine;
+}
+
+/* li:nth-child(odd) {
+  color: blueviolet;
+}
+
+li:nth-child(even) {
+  color: rgb(159, 226, 43);
+} */
+
+article p:last-child{
+  color: rgb(255, 0, 132);
 }
