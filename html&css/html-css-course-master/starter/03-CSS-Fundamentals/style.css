@@ -1,7 +1,12 @@
+/* *{
+  border-bottom: 1px solid green;
+} */
+
 body {
   color: #444;
   font-family: sans-serif;
   border-top: 10px solid black;
+  border-bottom: 10px solid black;
 }
 
 nav {
