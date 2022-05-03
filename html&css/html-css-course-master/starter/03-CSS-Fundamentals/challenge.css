@@ -12,13 +12,16 @@ header {
 }
 
 /* LINK */
-a:any-link {
+.more-info:any-link,
+.more-info:visited {
   color: black;
 }
-
-a:hover {
+.more-info:hover,
+.more-info:active {
   text-decoration: none;
 }
+
+/* ASIDE */
 aside p {
   font-weight: bold;
 }
@@ -31,24 +34,24 @@ li {
 /* PRODUCT INFORMATION */
 .free-shipping {
   font-size: 12px;
+  text-transform: uppercase;
   font-weight: bold;
   color: #777;
 }
-
 .price {
-  font-size: 25px;
+  font-size: 24px;
 }
 
 /* BUTTON */
-button {
+.add-cart {
   cursor: pointer;
   font-size: 20px;
   border: none;
+  text-transform: uppercase;
   color: white;
   background-color: black;
 }
-
-button:hover {
+.add-cart:hover {
   color: black;
   background-color: white;
 }
