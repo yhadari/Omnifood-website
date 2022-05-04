@@ -17,12 +17,18 @@ nav {
 .main-header {
   background-color: #ddd;
   padding: 20px 40px;
+  margin-bottom: 40px;
+}
+
+.art-header {
+  margin-bottom: 30px;
 }
 
 aside {
   background-color: #ddd;
   border-top: 5px solid rgba(44, 2, 2, 0.54);
   border-bottom: 5px solid rgba(44, 2, 2, 0.54);
+  padding: 50px 0px;
 }
 
 h1,
@@ -39,10 +45,12 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin: 15px 0;
 }
 
 h4 {
