@@ -1,6 +1,7 @@
-/* *{
-  border-bottom: 1px solid green;
-} */
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   color: #444;
@@ -11,6 +12,17 @@ body {
 
 nav {
   font-size: 22px;
+}
+
+.main-header {
+  background-color: #ddd;
+  padding: 20px 40px;
+}
+
+aside {
+  background-color: #ddd;
+  border-top: 5px solid rgba(44, 2, 2, 0.54);
+  border-bottom: 5px solid rgba(44, 2, 2, 0.54);
 }
 
 h1,
@@ -42,6 +54,7 @@ h4 {
 
 li {
   font-size: 20px;
+  margin-bottom: 20px;
 }
 
 p {
@@ -80,16 +93,6 @@ p {
   list-style: none;
 } */
 
-.main-header {
-  background-color: #ddd;
-}
-
-aside {
-  background-color: #ddd;
-  border-top: 5px solid rgba(44, 2, 2, 0.54);
-  border-bottom: 5px solid rgba(44, 2, 2, 0.54);
-}
-
 /* body {
   background-color: beige;
 } */
@@ -100,6 +103,7 @@ li:first-child {
 
 li:last-child {
   color: aquamarine;
+  margin-bottom: 0;
 }
 
 /* li:nth-child(odd) {
