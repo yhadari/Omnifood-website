@@ -14,6 +14,7 @@ body {
 article {
   padding-left: 10px;
 }
+
 nav {
   font-size: 22px;
 }
@@ -32,7 +33,8 @@ aside {
   background-color: #ddd;
   border-top: 5px solid rgba(44, 2, 2, 0.54);
   border-bottom: 5px solid rgba(44, 2, 2, 0.54);
-  padding: 50px 0px;
+  padding: 40px 0px;
+  margin-top: 80px;
 }
 
 h1,
@@ -67,7 +69,7 @@ h4 {
 
 ul,
 ol {
-  margin-left: 40px;
+  margin-left: 30px;
   margin-bottom: 15px;
 }
 li {
