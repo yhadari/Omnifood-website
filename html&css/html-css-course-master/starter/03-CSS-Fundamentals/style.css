@@ -124,7 +124,7 @@ li:first-child {
 
 li:last-child {
   color: aquamarine;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 
 /* li:nth-child(odd) {
