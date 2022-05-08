@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
   border: 5px solid black;
   font-family: sans-serif;
@@ -50,6 +55,7 @@ li {
   text-transform: uppercase;
   color: white;
   background-color: black;
+  transition: 0.7s;
 }
 .add-cart:hover {
   color: black;
