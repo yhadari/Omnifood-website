@@ -20,10 +20,10 @@ nav {
 }
 
 nav a:link{
-  background-color: black;
+  /* background-color: black;
   margin: 10px;
   padding: 10px;
-  display: block;
+  display: block; */
 }
 .container {
   width: 800px;
@@ -36,7 +36,7 @@ nav a:link{
   background-color: #ddd;
   padding: 20px 40px;
   margin-bottom: 40px;
-  height: 80px;
+  /* height: 90px; */
 }
 
 .art-header {
@@ -86,11 +86,13 @@ h4 {
 ul,
 ol {
   margin-left: 30px;
-  /* margin-bottom: 15px; */
+  margin-bottom: 15px;
 }
+
 li {
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  display:inline-block
 }
 
 p {
