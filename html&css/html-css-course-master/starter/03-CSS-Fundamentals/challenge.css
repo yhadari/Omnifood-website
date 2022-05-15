@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -10,7 +10,7 @@ body {
   margin: 50px auto;
 }
 
-p{
+p {
   line-height: 1.8;
 }
 
@@ -20,10 +20,27 @@ header {
   background-color: #baadad5b;
   text-transform: uppercase;
   padding: 15px;
+  position: relative;
 }
 
+header::before {
+  content: "sale";
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(234, 0, 0);
+  padding: 5px 12px;
+  position: absolute;
+  top: -14px;
+  left: -34px;
+}
 /* LINK */
 
+.more-info {
+  display: inline-block;
+  margin-bottom: 40px;
+}
 
 .more-info:any-link,
 .more-info:visited {
@@ -35,10 +52,33 @@ header {
 }
 
 /* ASIDE */
+
 aside p {
   font-weight: bold;
   margin-bottom: 15px;
   margin-top: 30px;
+}
+
+aside {
+  position: relative;
+}
+
+aside::after {
+  content: "";
+  padding: 10px;
+  background-color: black;
+  position: absolute;
+  top: -40px;
+  left: 0;
+}
+
+aside::before {
+  content: "";
+  padding: 10px;
+  background-color: blue;
+  position: absolute;
+  top: -40px;
+  left: 30px;
 }
 
 /* LIST */
@@ -78,4 +118,32 @@ aside li {
 .add-cart:hover {
   color: black;
   background-color: white;
+}
+
+.bts {
+  position: absolute;
+  top: 522.5px;
+  left: 288px;
+}
+
+.b1,
+.b2,
+.b3,
+.b4 {
+  border: none;
+  padding: 10px;
+  margin-right: 8px;
+}
+
+.b1 {
+  background-color: red;
+}
+.b2 {
+  background-color: rgb(236, 236, 0);
+}
+.b3 {
+  background-color: greenyellow;
+}
+.b4 {
+  background-color: saddlebrown;
 }
