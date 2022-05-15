@@ -55,14 +55,16 @@ header {
 
 /* LINK */
 
-.more-info {
+/* .more-info {
   display: inline-block;
   margin-bottom: 40px;
-}
+} */
 
 .more-info:any-link,
 .more-info:visited {
   color: black;
+  margin-bottom: 20px;
+  display: inline-block;
 }
 .more-info:hover,
 .more-info:active {
@@ -81,7 +83,7 @@ aside {
   position: relative;
 }
 
-aside::after {
+/* aside::after {
   content: "";
   padding: 10px;
   background-color: black;
@@ -97,7 +99,7 @@ aside::before {
   position: absolute;
   top: -40px;
   left: 30px;
-}
+} */
 
 /* LIST */
 aside li {
@@ -138,7 +140,44 @@ aside li {
   background-color: white;
 }
 
-.bts {
+/* .colors {
+  padding-right: 10px;
+  display: inline;
+} */
+
+.color {
+  height: 22px;
+  width: 22px;
+  background-color: black;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.color_black {
+  background-color: black;
+}
+
+.color_blue {
+  background-color: blue;
+}
+
+.color_yellow {
+  background-color: rgb(240, 240, 0);
+}
+
+.color_green {
+  background-color: rgb(0, 240, 68);
+}
+
+.color_red {
+  background-color: red;
+}
+
+.color_brown {
+  background-color: brown;
+}
+
+/* .colors {
   position: absolute;
   top: 468.5px;
   left: 60px;
@@ -164,4 +203,4 @@ aside li {
 }
 .b4 {
   background-color: saddlebrown;
-}
+} */
