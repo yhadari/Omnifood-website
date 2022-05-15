@@ -8,6 +8,7 @@ body {
   font-family: sans-serif;
   width: 60%;
   margin: 50px auto;
+  position: relative;
 }
 
 p {
@@ -23,7 +24,23 @@ header {
   position: relative;
 }
 
-header::before {
+.sele {
+  background-color: rgb(222, 0, 0);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 7px 15px;
+  display: inline-block;
+  letter-spacing: 1.5px;
+  position: absolute;
+  top: -20px;
+  left: -36px;
+  /* width: 40px; */
+  /* text-align: center; */
+}
+
+/* header::before {
   content: "sale";
   letter-spacing: 1.5px;
   font-size: 12px;
@@ -34,7 +51,8 @@ header::before {
   position: absolute;
   top: -14px;
   left: -34px;
-}
+} */
+
 /* LINK */
 
 .more-info {
@@ -122,8 +140,8 @@ aside li {
 
 .bts {
   position: absolute;
-  top: 522.5px;
-  left: 288px;
+  top: 468.5px;
+  left: 60px;
 }
 
 .b1,
