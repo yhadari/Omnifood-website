@@ -7,7 +7,7 @@
 body {
   border: 4px solid black;
   font-family: sans-serif;
-  width: 908px;
+  width: 825px;
   margin: 50px auto;
   position: relative;
 }
@@ -134,7 +134,6 @@ aside li {
   background-color: black;
   transition: 0.7s;
   width: 100%;
-  /* height: 40px; */
   padding: 15px;
   border-top: 4px solid black;
 }
@@ -211,23 +210,22 @@ aside li {
 .img {
   /* background-color: yellow; */
   float: left;
-  width: 300px;
 }
 
 .product {
   /* background-color: green; */
   float: left;
-  width: 300px;
-  margin-top: 15px;
-  padding: 30px;
+  width: 243px;
+  padding-top: 20px;
+  margin-left: 40px;
 }
 
 .product_details {
   /* background-color: red; */
-  float: right;
-  width: 300px;
-  margin-top: 15px;
-  padding: 30px;
+  float: left;
+  width: 243px;
+  margin-top: 20px;
+  margin-left: 40px;
 }
 
 /* .free-shipping,
@@ -235,9 +233,9 @@ aside li {
   display: inline-block;
 } */
 
-/* .free-shipping {
-  margin-left: 70px;
-} */
+.free-shipping {
+  margin-top: 8px;
+}
 
 aside p {
   margin-top: 0;
