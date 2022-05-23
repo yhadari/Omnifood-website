@@ -244,3 +244,13 @@ aside p {
 .product_description {
   clear: both;
 }
+
+/* .container {
+  background-color: red;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+} */
