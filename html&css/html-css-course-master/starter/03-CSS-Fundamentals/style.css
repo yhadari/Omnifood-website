@@ -59,7 +59,7 @@ nav a:link {
   padding: 10px;
   display: block; */
   margin-right: 20px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   display: inline-block;
 }
 
@@ -162,7 +162,7 @@ p {
   font-size: 16px;
 }
 
-.name {
+.related-author {
   font-size: 18px;
   font-weight: bold;
   color: rgb(162, 22, 22);
@@ -208,9 +208,9 @@ article p:first-child {
   color: rgb(0, 255, 128);
 }
 
-article p:last-child {
+/* article p:last-child {
   color: rgb(255, 0, 132);
-}
+} */
 
 /* styling links */
 
@@ -308,9 +308,29 @@ footer {
   clear: both;
 } */
 
-/* flex */
-
+/* flexbox */
 .main-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.author_box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 20px;
+}
+
+.author {
+  margin-bottom: 0;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+}
+
+.related-author {
+  margin-bottom: 0;
 }
