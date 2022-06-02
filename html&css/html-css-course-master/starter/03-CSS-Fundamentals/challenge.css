@@ -204,3 +204,32 @@ aside li {
 .b4 {
   background-color: saddlebrown;
 } */
+
+.row {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.shipping {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product,
+.product-details {
+  width: 50%;
+}
+
+.product {
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.product-details {
+  margin-left: 40px;
+}
+.free-shipping {
+  margin: 0;
+}
