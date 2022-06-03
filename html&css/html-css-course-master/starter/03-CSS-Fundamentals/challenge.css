@@ -145,12 +145,17 @@ aside li {
   display: inline;
 } */
 
+.colors {
+  display: flex;
+  gap: 15px;
+}
+
 .color {
   height: 22px;
   width: 22px;
   background-color: black;
-  margin-right: 10px;
-  display: inline-block;
+  /* margin-right: 10px; */
+  /* display: inline-block; */
 }
 
 .color_black {
@@ -209,6 +214,7 @@ aside li {
   display: flex;
   /* align-items: center; */
   /* justify-content: center; */
+  gap: 40px;
 }
 
 .shipping {
@@ -219,17 +225,18 @@ aside li {
 
 .product,
 .product-details {
-  width: 50%;
+  flex: 1;
 }
 
 .product {
   margin-top: 30px;
-  margin-left: 40px;
+  /* margin-left: 40px; */
 }
 
-.product-details {
+/* .product-details {
   margin-left: 40px;
-}
+} */
+
 .free-shipping {
   margin: 0;
 }
