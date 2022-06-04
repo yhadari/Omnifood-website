@@ -7,23 +7,50 @@
       .body {
         margin: 0;
       }
-      .countainer {
+      .nav {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        background-color: #8d1ba2;
-        height: 100vh;
+        border-top: 1px solid #999;
+        border-bottom: 1px solid #999;
+        padding: 5px;
+        background-color: bisque;
       }
-      .box {
-        height: 500px;
-        width: 500px;
-        background-color: white;
+      .nav_right {
+        display: flex;
+        margin-right: 20px;
+        font-family: sans-serif;
+        font-weight: bold;
+      }
+      .img {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        border-radius: 50%;
+        margin-left: 20px;
+      }
+      .header {
+        font-family: sans-serif;
+      }
+      .contact,
+      .work,
+      .portoflio {
+        margin-right: 60px;
+      }
+      h1 {
+        text-transform: capitalize;
       }
     </style>
   </head>
   <body class="body">
-    <div class="countainer">
-      <div class="box"></div>
+    <h1 class="header">navbars</h1>
+    <div class="nav">
+      <div class="img"></div>
+      <div class="nav_right">
+        <div class="contact">Contact</div>
+        <div class="work">Work</div>
+        <div class="portfolio">Portfolio</div>
+      </div>
     </div>
   </body>
 </html>
