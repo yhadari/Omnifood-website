@@ -12,7 +12,9 @@
       .el--2 {
         background-color: orangered;
         /* justify-self: flex-start; */
-        grid-column: 3/4;
+        /* grid-column: 3 / span 2; */
+        /* grid-column: 3 /2; */
+        grid-column: 1 /-1;
         grid-row: 2/3;
       }
       .el--3 {
@@ -30,6 +32,7 @@
       }
       .el--7 {
         background-color: yellow;
+        justify-self: center;
       }
       .el--8 {
         background-color: crimson;
@@ -55,6 +58,7 @@
         column-gap: 30px;
         row-gap: 60px;
         /* justify-items: center; */
+        display: none;
       }
 
       .container--2 {
@@ -62,13 +66,27 @@
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
-        margin: 100px;
+        margin: 40px;
 
-        width: 1000px;
+        width: 700px;
         height: 600px;
-        display: none;
+        gap: 50px;
 
         /* CSS GRID */
+        display: grid;
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        /* aliging tracks inside container:
+        distribute empty space  */
+        /* justify-content: center;
+        align-content: center; */
+
+        /* aligning items insie cells:
+        moving items around inside cells */
+
+        /* align-items: end;
+        justify-items: end; */
       }
     </style>
   </head>
