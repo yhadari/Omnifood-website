@@ -31,6 +31,9 @@ section {
 
 h2 {
   margin-bottom: 48px;
+  /* 24 / 30 / 36  */
+  font-size: 30px;
+  letter-spacing: -0.5px;
 }
 
 .grid-3-cols {
@@ -57,10 +60,16 @@ header {
 
 h1 {
   margin-bottom: 24px;
+  /* 44 / 52 / 62 */
+  font-size: 44px;
+  letter-spacing: -1.5px;
+  line-height: 1.1;
 }
 
 .header-text {
   margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 img {
@@ -76,6 +85,8 @@ img {
 }
 
 .features-text {
+  line-height: 1.6;
+  font-size: 18px;
 }
 
 /* TESTIMONIAL */
@@ -89,11 +100,15 @@ img {
 
 .testimonial-box h2 {
   margin-bottom: 24px;
+  /* 20 / 24 / 30 */
+  font-size: 24px;
 }
 
 .testimonial-text {
   font-style: italic;
   margin-bottom: 24px;
+  line-height: 1.6;
+  font-size: 18px;
 }
 
 /* CHAIRS */
@@ -108,6 +123,7 @@ h3 {
 .chair-details {
   list-style: none;
   margin-bottom: 24px;
+  font-size: 18px;
 }
 
 .chair-details li {
@@ -127,6 +143,7 @@ h3 {
 .chair-price {
   display: flex;
   justify-content: space-between;
+  font-size: 20px;
 }
 
 footer {
