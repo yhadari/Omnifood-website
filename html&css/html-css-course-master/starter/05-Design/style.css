@@ -20,6 +20,7 @@ FONT SIZE SYSTEM (px)
 body {
   font-family: "Inter", sans-serif;
   color: #343a40;
+  border-bottom: 8px solid #087f5b;
 }
 
 .btn:any-link,
@@ -170,10 +171,14 @@ h3 {
 }
 
 .chair-icon {
+  stroke: #087f5b;
+  width: 24px;
+  height: 24px;
 }
 
-.price {
+.price:hover {
   text-decoration: underline;
+  font-size: 22px;
 }
 .chair-price {
   display: flex;
@@ -181,7 +186,13 @@ h3 {
   align-items: center;
   font-size: 20px;
 }
-
+.features-icon {
+  width: 36px;
+  height: 36px;
+  stroke: #087f5b;
+  margin-bottom: 16px;
+  border-radius: 5px;
+}
 footer {
   margin-bottom: 48px;
   font-size: 14px;
