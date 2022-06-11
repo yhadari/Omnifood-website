@@ -20,6 +20,7 @@
 
       /* main color: #087f5b 
        grey color: #343a40 */
+
       * {
         margin: 0;
         padding: 0;
@@ -31,28 +32,35 @@
         color: #343a40;
       }
 
-      .item {
-        display: grid;
+      .accordion {
         width: 740px;
         margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+      }
+
+      .item {
+        display: grid;
         grid-template-areas:
           "number title icon"
-          "number text icon"
-          "number list icon";
-        gap: 30px;
-        border-top: 4px solid #087f5b;
+          "number hidden-box icon";
+        column-gap: 30px;
+        row-gap: 40px;
+        /* border-top: 4px solid #087f5b; */
         padding: 30px;
-        box-shadow: 4px 16px 32px 0 #ced4da91;
+        box-shadow: 4px 16px 32px 0 #ced4da8b;
+        /* margin-bottom: 60px; */
       }
       .acc-number {
         grid-area: number;
         font-size: 24px;
-        color: #087f5b;
+        font-weight: 500;
+        color: #ced4da;
       }
       .acc-title {
         grid-area: title;
         font-size: 24px;
-        color: #087f5b;
         /* letter-spacing: -0.5px; */
         font-weight: 600;
       }
@@ -65,11 +73,11 @@
         stroke: #0ca678;
       }
       .acc-text {
-        grid-area: text;
         letter-spacing: 0.7px;
+        line-height: 1.4;
+        margin-bottom: 24px;
       }
       .acc-list {
-        grid-area: list;
         margin-left: 15px;
         /* letter-spacing: 0.2px; */
         /* line-height: 1.5; */
@@ -79,17 +87,75 @@
       .acc-list ul {
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 10px;
       }
 
       .grid-items {
         display: flex;
+      }
+      .hidden-box {
+        grid-area: hidden-box;
+        display: flex;
+        flex-direction: column;
+        display: none;
+      }
+      .open {
+        border-top: 3px solid #0ca678;
+      }
+      .open .acc-number,
+      .open .acc-title {
+        color: #0ca678;
+      }
+      .open .hidden-box {
+        display: block;
       }
     </style>
   </head>
   <body>
     <div class="accordion">
       <div class="item">
+        <p class="grid-items acc-number">01</p>
+        <p class="grid-items acc-title">Where are these chairs assembled?</p>
+        <div class="grid-items acc-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <div class="hidden-box">
+          <p class="grid-items acc-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse autem
+            quae veritatis deserunt deleniti doloremque cumque libero ut
+            distinctio ipsum quos quam ratione, nisi aperiam velit qui
+            reprehenderit praesentium nesciunt!
+          </p>
+          <div class="grid-items acc-list">
+            <ul>
+              <li>
+                Lorem ipsum dolor, sit amet consecteturpisicing elit. Saepe,
+                excepturi.
+              </li>
+              <li>
+                Lorem ipsum dolor, siectetur adipisicing elit. Saepe, excepturi.
+              </li>
+              <li>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe,
+                excepturi
+              </li>
+              <li>Lorem ipsum doetur adipisicing elit. Saepe, excepturi.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="item open">
         <p class="grid-items acc-number">02</p>
         <p class="grid-items acc-title">
           How long do I have to return my chair?
@@ -108,27 +174,73 @@
             />
           </svg>
         </div>
-        <div class="grid-items acc-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse autem
-          quae veritatis deserunt deleniti doloremque cumque libero ut
-          distinctio ipsum quos quam ratione, nisi aperiam velit qui
-          reprehenderit praesentium nesciunt!
+        <div class="hidden-box">
+          <p class="grid-items acc-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse autem
+            quae veritatis deserunt deleniti doloremque cumque libero ut
+            distinctio ipsum quos quam ratione, nisi aperiam velit qui
+            reprehenderit praesentium nesciunt!
+          </p>
+          <div class="grid-items acc-list">
+            <ul>
+              <li>
+                Lorem ipsum dolor, sit amet consecteturpisicing elit. Saepe,
+                excepturi.
+              </li>
+              <li>
+                Lorem ipsum dolor, siectetur adipisicing elit. Saepe, excepturi.
+              </li>
+              <li>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe,
+                excepturi
+              </li>
+              <li>Lorem ipsum doetur adipisicing elit. Saepe, excepturi.</li>
+            </ul>
+          </div>
         </div>
-        <div class="grid-items acc-list">
-          <ul>
-            <li>
-              Lorem ipsum dolor, sit amet consecteturpisicing elit. Saepe,
-              excepturi.
-            </li>
-            <li>
-              Lorem ipsum dolor, siectetur adipisicing elit. Saepe, excepturi.
-            </li>
-            <li>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe,
-              excepturi
-            </li>
-            <li>Lorem ipsum doetur adipisicing elit. Saepe, excepturi.</li>
-          </ul>
+      </div>
+      <div class="item">
+        <p class="grid-items acc-number">03</p>
+        <p class="grid-items acc-title">
+          Do you ship to countries outside the EU?
+        </p>
+        <div class="grid-items acc-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <div class="hidden-box">
+          <p class="grid-items acc-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse autem
+            quae veritatis deserunt deleniti doloremque cumque libero ut
+            distinctio ipsum quos quam ratione, nisi aperiam velit qui
+            reprehenderit praesentium nesciunt!
+          </p>
+          <div class="grid-items acc-list">
+            <ul>
+              <li>
+                Lorem ipsum dolor, sit amet consecteturpisicing elit. Saepe,
+                excepturi.
+              </li>
+              <li>
+                Lorem ipsum dolor, siectetur adipisicing elit. Saepe, excepturi.
+              </li>
+              <li>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe,
+                excepturi
+              </li>
+              <li>Lorem ipsum doetur adipisicing elit. Saepe, excepturi.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
