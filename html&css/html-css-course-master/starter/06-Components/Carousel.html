@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+
+      /* main color: #087f5b
+       grey color: #343a40 */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .carousel {
+        display: flex;
+        justify-content: end;
+        width: 700px;
+        margin: 100px auto;
+        background-color: #099268;
+        border-radius: 5px;
+        position: relative;
+      }
+      .content {
+        width: 60%;
+        padding: 20px;
+      }
+
+      .carousel img {
+        /* 32%: 700 = 252 
+        224 - 200 height = 52
+        24/2 = 26*/
+        width: 36%;
+        border-radius: 10px;
+        position: absolute;
+        top: -26px;
+        left: 24px;
+        box-shadow: 10px 10px 24px rgba(0, 0, 0, 0.232);
+      }
+
+      .text {
+        color: white;
+        line-height: 1.4;
+        margin-bottom: 20px;
+        font-weight: 500;
+      }
+      .author {
+        color: #c3fae8;
+        font-size: 12px;
+      }
+      .flesh {
+        width: 36px;
+        height: 36px;
+        background-color: white;
+        border-radius: 50%;
+        stroke: #087f5b;
+        color: #087f5b;
+      }
+      .flesh-right {
+        position: absolute;
+        top: calc(50% - 18px);
+        right: -18px;
+      }
+      .flesh-left {
+        position: absolute;
+        top: calc(50% - 18px);
+        left: -18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <img src="maria.jpg" alt="food" />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="flesh flesh-right"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+          clip-rule="evenodd"
+        />
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="flesh flesh-left"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+          clip-rule="evenodd"
+        />
+      </svg>
+      <div class="content">
+        <div class="text">
+          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quasi
+          hic omnis excepturi, earum blanditiis vel, porro natus neque eveniet
+          aperiam mollitia delectus dolor! Dolores reiciendis provident
+          doloremque officiis enim."
+        </div>
+        <div class="author">
+          Maria de Almeida <br />
+          Senior Product Manager at EDP Comercial
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
