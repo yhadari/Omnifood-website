@@ -61,7 +61,7 @@
         width: 60%;
         padding: 24px;
       }
-      
+
       .testimonial-text {
         color: #e6fcf5;
         line-height: 1.4;
@@ -74,7 +74,16 @@
         font-size: 12px;
       }
 
-      .flesh {
+      .testimonial-job {
+        color: #96f2d7;
+        font-size: 10px;
+      }
+
+      .btn {
+        border: none;
+      }
+
+      .chevron {
         width: 36px;
         height: 36px;
         background-color: white;
@@ -84,27 +93,27 @@
         box-shadow: 10px 10px 24px rgba(0, 0, 0, 0.141);
       }
 
-      .flesh-right {
+      .chevron-right {
         /* 36/2 = 18 */
         position: absolute;
         top: calc(50% - 18px);
         right: -18px;
       }
 
-      .flesh-left {
+      .chevron-left {
         /* 36/2 = 18 */
         position: absolute;
         top: calc(50% - 18px);
         left: -18px;
       }
 
-      .circls{
+      .circls {
         display: flex;
         justify-content: center;
         margin-top: 16px;
       }
 
-      .circl{
+      .circl {
         width: 10px;
         height: 10px;
         background-color: white;
@@ -113,39 +122,14 @@
         border: 1.5px solid #087f5b;
       }
 
-      .colored{
+      .colored {
         background-color: #087f5b;
       }
-
     </style>
   </head>
   <body>
     <div class="carousel">
       <img src="maria.jpg" alt="food" />
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="flesh flesh-right"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-          clip-rule="evenodd"
-        />
-      </svg>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="flesh flesh-left"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
-          clip-rule="evenodd"
-        />
-      </svg>
       <blockquote class="testimonial">
         <p class="testimonial-text">
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quasi
@@ -153,11 +137,35 @@
           aperiam mollitia delectus dolor! Dolores reiciendis provident
           doloremque officiis enim."
         </p>
-        <div class="testimonial-author">
-          Maria de Almeida <br />
-          Senior Product Manager at EDP Comercial
-        </div>
+        <p class="testimonial-author">Maria de Almeida</p>
+        <p class="testimonial-job">Senior Product Manager at EDP Comercial</p>
       </blockquote>
+      <button class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="chevron chevron-right"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="chevron chevron-left"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
     </div>
     <div class="circls">
       <div class="circl colored"></div>
