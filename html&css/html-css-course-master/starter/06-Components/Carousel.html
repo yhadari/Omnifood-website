@@ -46,7 +46,7 @@
       }
 
       .carousel img {
-        /* 36% : 700 = 252 
+        /* 36% : 700 = 252
         252 - 200 height = 52
         52/2 = 26*/
         width: 36%;
@@ -54,7 +54,7 @@
         position: absolute;
         top: -26px;
         left: 26px;
-        box-shadow: 10px 10px 24px rgba(0, 0, 0, 0.232);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.232);
       }
 
       .testimonial {
@@ -90,21 +90,23 @@
         border-radius: 50%;
         color: #087f5b;
         cursor: pointer;
-        box-shadow: 10px 10px 24px rgba(0, 0, 0, 0.141);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.141);
+        position: absolute;
       }
 
       .chevron-right {
-        /* 36/2 = 18 */
-        position: absolute;
-        top: calc(50% - 18px);
-        right: -18px;
+        top: 50%;
+        transform: translate(-50%, -50%);
       }
 
       .chevron-left {
-        /* 36/2 = 18 */
-        position: absolute;
-        top: calc(50% - 18px);
-        left: -18px;
+        right: 100%;
+        transform: translate(+50%, -50%);
+      }
+
+      .chevron:active {
+        width: 40px;
+        height: 40px;
       }
 
       .circls {
