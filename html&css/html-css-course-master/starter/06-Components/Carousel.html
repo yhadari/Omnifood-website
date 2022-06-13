@@ -30,60 +30,93 @@
       body {
         font-family: "Inter", sans-serif;
       }
+
       .carousel {
         display: flex;
         justify-content: end;
         width: 700px;
-        margin: 100px auto;
+        height: 200px;
+        margin-top: 100px;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
         background-color: #099268;
         border-radius: 5px;
         position: relative;
       }
+
       .content {
         width: 60%;
-        padding: 20px;
+        padding: 24px;
       }
 
       .carousel img {
-        /* 32%: 700 = 252 
-        224 - 200 height = 52
-        24/2 = 26*/
+        /* 36% : 700 = 252 
+        252 - 200 height = 52
+        52/2 = 26*/
         width: 36%;
         border-radius: 10px;
         position: absolute;
         top: -26px;
-        left: 24px;
+        left: 26px;
         box-shadow: 10px 10px 24px rgba(0, 0, 0, 0.232);
       }
-
+      
       .text {
-        color: white;
+        color: #e6fcf5;
         line-height: 1.4;
         margin-bottom: 20px;
         font-weight: 500;
       }
+
       .author {
         color: #c3fae8;
         font-size: 12px;
       }
+
       .flesh {
         width: 36px;
         height: 36px;
         background-color: white;
         border-radius: 50%;
-        stroke: #087f5b;
         color: #087f5b;
+        cursor: pointer;
+        box-shadow: 10px 10px 24px rgba(0, 0, 0, 0.141);
       }
+
       .flesh-right {
+        /* 36/2 = 18 */
         position: absolute;
         top: calc(50% - 18px);
         right: -18px;
       }
+
       .flesh-left {
+        /* 36/2 = 18 */
         position: absolute;
         top: calc(50% - 18px);
         left: -18px;
       }
+
+      .circls{
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+      }
+
+      .circl{
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        margin-right: 10px;
+        border-radius: 50%;
+        border: 1.5px solid #087f5b;
+      }
+
+      .colored{
+        background-color: #087f5b;
+      }
+
     </style>
   </head>
   <body>
@@ -125,6 +158,12 @@
           Senior Product Manager at EDP Comercial
         </div>
       </div>
+    </div>
+    <div class="circls">
+      <div class="circl colored"></div>
+      <div class="circl"></div>
+      <div class="circl"></div>
+      <div class="circl"></div>
     </div>
   </body>
 </html>
