@@ -45,11 +45,6 @@
         position: relative;
       }
 
-      .content {
-        width: 60%;
-        padding: 24px;
-      }
-
       .carousel img {
         /* 36% : 700 = 252 
         252 - 200 height = 52
@@ -61,15 +56,20 @@
         left: 26px;
         box-shadow: 10px 10px 24px rgba(0, 0, 0, 0.232);
       }
+
+      .testimonial {
+        width: 60%;
+        padding: 24px;
+      }
       
-      .text {
+      .testimonial-text {
         color: #e6fcf5;
         line-height: 1.4;
         margin-bottom: 20px;
         font-weight: 500;
       }
 
-      .author {
+      .testimonial-author {
         color: #c3fae8;
         font-size: 12px;
       }
@@ -146,18 +146,18 @@
           clip-rule="evenodd"
         />
       </svg>
-      <div class="content">
-        <div class="text">
+      <blockquote class="testimonial">
+        <p class="testimonial-text">
           "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque quasi
           hic omnis excepturi, earum blanditiis vel, porro natus neque eveniet
           aperiam mollitia delectus dolor! Dolores reiciendis provident
           doloremque officiis enim."
-        </div>
-        <div class="author">
+        </p>
+        <div class="testimonial-author">
           Maria de Almeida <br />
           Senior Product Manager at EDP Comercial
         </div>
-      </div>
+      </blockquote>
     </div>
     <div class="circls">
       <div class="circl colored"></div>
