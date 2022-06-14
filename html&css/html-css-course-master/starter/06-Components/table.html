@@ -25,15 +25,18 @@
 
       body {
         font-family: "Inter", sans-serif;
-        display: flex;
-        justify-content: center;
+        /* display: flex;
+        justify-content: center; */
       }
 
       table {
         border-collapse: collapse;
         /* border-spacing: 10px; */
         table-layout: fixed;
-        width: 50%;
+        /* width: 50%; */
+        width: 800px;
+        /* place of flex in body*/
+        margin: 0 auto;
       }
 
       tr:nth-child(even) {
@@ -69,36 +72,41 @@
   </head>
   <body>
     <table>
-      <tr>
-        <th>Chair</th>
-        <th>The Laid Back</th>
-        <th>The Worker Bee</th>
-        <th>The Chair 4/2</th>
-      </tr>
-      <tr>
-        <td>Width</td>
-        <td>80 cm</td>
-        <td>60 cm</td>
-        <td>220 cm</td>
-      </tr>
-      <tr>
-        <td>Height</td>
-        <td>100 cm</td>
-        <td>110 cm</td>
-        <td>90 cm</td>
-      </tr>
-      <tr>
-        <td>Depth</td>
-        <td>70 cm</td>
-        <td>65 cm</td>
-        <td>80 cm</td>
-      </tr>
-      <tr>
-        <td>Weight</td>
-        <td>16 cm</td>
-        <td>22 cm</td>
-        <td>80 cm</td>
-      </tr>
+      <thead>
+        <tr>
+          <th>Chair</th>
+          <th>The Laid Back</th>
+          <th>The Worker Bee</th>
+          <th>The Chair 4/2</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Width</td>
+          <td>80 cm</td>
+          <td>60 cm</td>
+          <td>220 cm</td>
+        </tr>
+        <tr>
+          <td>Height</td>
+          <td>100 cm</td>
+          <td>110 cm</td>
+          <td>90 cm</td>
+        </tr>
+        <tr>
+          <td>Depth</td>
+          <td>70 cm</td>
+          <td>65 cm</td>
+          <td>80 cm</td>
+        </tr>
+        <tr>
+          <td>Weight</td>
+          <td>16 cm</td>
+          <td>22 cm</td>
+          <td>80 cm</td>
+        </tr>
+      </tbody>
     </table>
   </body>
 </html>
