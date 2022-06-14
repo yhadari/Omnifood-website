@@ -34,7 +34,7 @@
       .carousel {
         display: flex;
         justify-content: end;
-        width: 700px;
+        width: 800px;
         height: 200px;
         margin-top: 100px;
         margin-bottom: 0;
@@ -46,14 +46,14 @@
       }
 
       .carousel img {
-        /* 36% : 700 = 252
-        252 - 200 height = 52
-        52/2 = 26*/
+        /* 36% : 800 = 288
+        288 - 200 height = 88
+        88/2 = 44*/
         width: 36%;
         border-radius: 10px;
         position: absolute;
-        top: -26px;
-        left: 26px;
+        top: -44px;
+        left: 30px;
         box-shadow: 0 12px 24px rgba(0, 0, 0, 0.232);
       }
 
@@ -95,13 +95,15 @@
       }
 
       .chevron-right {
+        right: 0;
         top: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(50%, -50%);
       }
 
       .chevron-left {
-        right: 100%;
-        transform: translate(+50%, -50%);
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
       }
 
       .chevron:active {
@@ -109,22 +111,28 @@
         height: 40px;
       }
 
-      .circls {
+      .dots {
         display: flex;
         justify-content: center;
         margin-top: 16px;
+        /* position: absolute;
+        right: 50%;
+        bottom: 0;
+        transform: translate(50%, 30px);
+        display: flex;
+        gap: 12px; */
       }
 
-      .circl {
+      .dot {
         width: 10px;
         height: 10px;
         background-color: white;
-        margin-right: 10px;
-        border-radius: 50%;
         border: 1.5px solid #087f5b;
+        border-radius: 50%;
+        margin-right: 10px;
       }
 
-      .colored {
+      .dot-fill {
         background-color: #087f5b;
       }
     </style>
@@ -169,11 +177,11 @@
         </svg>
       </button>
     </div>
-    <div class="circls">
-      <div class="circl colored"></div>
-      <div class="circl"></div>
-      <div class="circl"></div>
-      <div class="circl"></div>
+    <div class="dots">
+      <button class="dot dot-fill">&nbsp;</button>
+      <button class="dot">&nbsp;</button>
+      <button class="dot">&nbsp;</button>
+      <button class="dot">&nbsp;</button>
     </div>
   </body>
 </html>
