@@ -35,62 +35,72 @@
       }
 
       header {
+        background-image: linear-gradient(
+            rgba(45, 45, 45, 0.4),
+            rgba(45, 45, 45, 0.4)
+          ),
+          url("hero.jpg");
+        /* width: 1200px;
+        margin: 0 auto; */
         height: 100%;
-        background-image: url("hero.jpg");
         background-size: cover;
         color: #fff;
-        margin-bottom: 80px;
+        position: relative;
       }
 
+      .container {
+        width: 1200px;
+        margin: 0 auto;
+      }
+
+      .header-container-inner {
+        width: 50%;
+      }
       nav {
         display: flex;
         justify-content: space-between;
-        font-size: 36px;
+        font-size: 20px;
         font-weight: bold;
         letter-spacing: -0.5px;
-        padding: 50px 12%;
-      }
-
-      .overlay {
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.386);
-        /* display: grid; */
+        padding-top: 32px;
       }
 
       .header-text-box {
-        width: 50%;
-        padding-left: 12%;
+        width: 1200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
 
       .header-text-box h1 {
-        font-size: 74px;
+        font-size: 52px;
         line-height: 1;
-        letter-spacing: -1.5px;
-        margin-bottom: 30px;
+        letter-spacing: -1px;
+        margin-bottom: 32px;
+        /* text-align: center; */
       }
 
       .header-text {
-        font-size: 44px;
-        line-height: 1.5;
+        font-size: 20px;
         margin-bottom: 44px;
         color: #e9ecef;
+        line-height: 1.5;
       }
 
       .btn {
         text-decoration: none;
-        font-size: 40px;
+        font-size: 20px;
         color: #fff;
         background-color: #f76707f3;
-        padding: 12px 24px;
-        width: 40%;
+        padding: 16px 32px;
         text-align: center;
         border-radius: 10px;
         font-weight: 700;
         display: inline-block;
       }
       section {
-        height: 30%;
-        padding: 0 12%;
+        padding: 96px 0;
       }
       section h2 {
         font-size: 36px;
@@ -100,12 +110,12 @@
   </head>
   <body>
     <header>
-      <div class="overlay">
-        <nav>
-          <p class="logo">LOGO</p>
-          <p class="navigation">NAVIGATION</p>
-        </nav>
-        <div class="header-text-box">
+      <nav class="container">
+        <p class="logo">LOGO</p>
+        <p class="navigation">NAVIGATION</p>
+      </nav>
+      <div class="container header-text-box">
+        <div class="header-container-inner">
           <h1>A healthy meal delivered to your door, every single day</h1>
           <p class="header-text">
             The small 365-day-per-year food subscription that will make you eat
@@ -117,13 +127,15 @@
       </div>
     </header>
     <section>
-      <h2>Some nice heading</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deserunt,
-        numquam praesentium deleniti, officiis distinctio, corrupti harum animi
-        totam dolore laborum ipsum mollitia architecto vero vel. Soluta
-        asperiores modi doloribus.
-      </p>
+      <div class="container">
+        <h2>Some nice heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+          deserunt, numquam praesentium deleniti, officiis distinctio, corrupti
+          harum animi totam dolore laborum ipsum mollitia architecto vero vel.
+          Soluta asperiores modi doloribus.
+        </p>
+      </div>
     </section>
   </body>
 </html>
