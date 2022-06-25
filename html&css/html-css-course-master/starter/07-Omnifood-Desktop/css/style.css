@@ -7,9 +7,14 @@
 
     FONT WEIGHTS:
     Defautl: 400
+    Medium: 500
+    Semi-bold: 600
+    Bold: 700
 
     LINE HEIGHTS:
     Default: 1 
+    Small: 1.05
+    Paragraph default: 1.6
 
 --- 02 colors
 
@@ -24,6 +29,8 @@
 --- 05 SHADOWS
 
 --- 06 BORDER-RADIUS
+
+    default: 0.8rem
 
 --- 07 WHITESPACE
 
@@ -60,6 +67,25 @@ body {
 /**************************/
 /* GENERAL REUSABLE COMPONENETS */
 /**************************/
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .heading-primary {
   font-size: 5.2rem;
   font-weight: 700;
@@ -76,7 +102,7 @@ body {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
-  border-radius: 10px;
+  border-radius: 0.8rem;
   font-weight: 600;
 
   transition: all 0.3s;
@@ -240,4 +266,13 @@ body {
 .first-word {
   color: #cf711f;
   font-weight: 700;
+}
+
+/**************************/
+/* HOW IT WORK SECTION */
+/**************************/
+
+.section-how {
+  padding: 9.6rem 0;
+  background-color: orangered;
 }
