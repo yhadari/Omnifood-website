@@ -14,7 +14,12 @@
     LINE HEIGHTS:
     Default: 1 
     Small: 1.05
+    Medium: 1.2
     Paragraph default: 1.6
+
+    Letter spacaing:
+    -0.6px
+    0.75px
 
 --- 02 colors
 
@@ -86,13 +91,33 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.heading-secondary,
+.heading-primary {
+  letter-spacing: -0.6px;
+  font-weight: 700;
+  color: #333;
+}
+
 .heading-primary {
   font-size: 5.2rem;
-  font-weight: 700;
   line-height: 1.05;
-  letter-spacing: -0.6px;
-  color: #333;
   margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.subheading {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+  color: #cf711f;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
 }
 
 .btn:link,
@@ -274,5 +299,13 @@ body {
 
 .section-how {
   padding: 9.6rem 0;
-  background-color: orangered;
+}
+
+.step-img-box {
+  display: flex;
+  justify-content: center;
+}
+
+.step-img {
+  width: 50%;
 }
