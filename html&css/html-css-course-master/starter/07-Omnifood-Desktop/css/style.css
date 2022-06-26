@@ -132,14 +132,11 @@
   padding: 9.6rem 0;
 }
 
-.step-text-box {
-  align-self: center;
-}
-
 .step-img-box {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .step-number {
@@ -156,5 +153,33 @@
 }
 
 .step-img {
-  width: 30%;
+  width: 35%;
+}
+
+.circle {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+.circle3 {
+  width: 24rem;
+  height: 24rem;
+  background-color: #e98b38;
+}
+
+.circle2 {
+  width: 30rem;
+  height: 30rem;
+  background-color: #eea564;
+}
+
+.circle1 {
+  width: 36rem;
+  height: 36rem;
+  background-color: #f3bf91;
 }
