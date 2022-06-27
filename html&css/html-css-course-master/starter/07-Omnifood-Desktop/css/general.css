@@ -73,7 +73,7 @@ body {
 /* GENERAL REUSABLE COMPONENETS */
 /**************************/
 .container {
-  max-width: 130rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 0 3.2rem;
 }
@@ -89,6 +89,7 @@ body {
 
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+  gap: 4.8rem;
 }
 
 .grid--center-v {
