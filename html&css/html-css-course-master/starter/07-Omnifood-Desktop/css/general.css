@@ -80,6 +80,7 @@ body {
 
 .grid {
   display: grid;
+  column-gap: 6.4rem;
   row-gap: 9.6rem;
 }
 
@@ -89,7 +90,6 @@ body {
 
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
-  gap: 4.8rem;
 }
 
 .grid--center-v {
@@ -177,4 +177,8 @@ body {
 
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+strong {
+  font-weight: 500;
 }

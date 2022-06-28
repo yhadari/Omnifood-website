@@ -37,7 +37,7 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a href="#" class="main-nav-link">How it works</a></li>
-          <li><a href="#" class="main-nav-link">Meals</a></li>
+          <li><a href="#meals" class="main-nav-link">Meals</a></li>
           <li><a href="#" class="main-nav-link">Testimonials</a></li>
           <li><a href="#" class="main-nav-link">Pricing</a></li>
           <li><a href="#" class="main-nav-link nav-cta">Try for free</a></li>
@@ -85,6 +85,7 @@
           </div>
         </div>
       </section>
+
       <section class="section-featured">
         <div class="container">
           <p class="heading-featured-in">As featured-in</p>
@@ -103,6 +104,7 @@
           </div>
         </div>
       </section>
+
       <section class="section-how">
         <div class="container">
           <span class="subheading">How it work</span>
@@ -184,7 +186,8 @@
           </div>
         </div>
       </section>
-      <section class="section-meals">
+
+      <section class="section-meals" id="meals">
         <div class="container">
           <span class="subheading">Meals</span>
           <h2 class="heading-secondary">
@@ -192,76 +195,59 @@
           </h2>
         </div>
         <div class="container grid grid--3-cols">
-          <div class="meals-box">
+          <div class="meal-box">
             <img
-              class="meals-img"
+              class="meal-img"
               src="img/meals/meal-1.jpg"
               alt="Japanese Gyozas"
             />
-            <div class="details-meal">
-              <p class="meal-name">Japanese Gyozas</p>
-              <ul class="meals-list">
-                <li>
-                  <i class="meals-icon bi bi-bookmark"></i>Category: Vegetarian
-                </li>
-                <li>
-                  <ion-icon
-                    class="meals-icon"
-                    name="calculator-outline"
-                  ></ion-icon
-                  >Calories: 650
-                </li>
-                <li>
-                  <ion-icon class="meals-icon" name="star-outline"></ion-icon
-                  >NutriScore (Registered): 74
-                </li>
-                <li>
-                  <ion-icon
-                    class="meals-icon"
-                    name="thumbs-up-outline"
-                  ></ion-icon
-                  >Average rating: 4.9
-                </li>
-                <li><i class="ph-check meals-icon"></i>Number reviews: 537</li>
-              </ul>
-            </div>
+            <p class="meal-name">Japanese Gyozas</p>
+            <ul class="meal-list">
+              <li>
+                <i class="meal-icon bi bi-bookmark"></i
+                ><span>Category: <span class="tag">Vegetarian</span></span>
+              </li>
+              <li>
+                <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                <span> <strong>650</strong> Calories</span>
+              </li>
+              <li>
+                <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon
+                ><span>NutriScore &reg; <strong>74</strong></span>
+              </li>
+              <li>
+                <ion-icon class="meal-icon" name="thumbs-up-outline"></ion-icon
+                ><span><strong>4.9</strong> rating (537)</span>
+              </li>
+            </ul>
           </div>
-          <div class="meals-box">
+          <div class="meal-box">
             <img
-              class="meals-img"
+              class="meal-img"
               src="img/meals/meal-2.jpg"
               alt="Avocado Salad"
             />
-            <div class="details-meal">
-              <p class="meal-name">Avocado Salad</p>
-              <ul class="meals-list">
-                <li>
-                  <i class="meals-icon bi bi-bookmark"></i>Category: Vegan and
-                  Paleo
-                </li>
-                <li>
-                  <ion-icon
-                    class="meals-icon"
-                    name="calculator-outline"
-                  ></ion-icon
-                  >Calories: 400
-                </li>
-                <li>
-                  <ion-icon class="meals-icon" name="star-outline"></ion-icon
-                  >NutriScore (Registered): 92
-                </li>
-                <li>
-                  <ion-icon
-                    class="meals-icon"
-                    name="thumbs-up-outline"
-                  ></ion-icon
-                  >Average rating: 4.8
-                </li>
-                <li><i class="ph-check meals-icon"></i>Number reviews: 441</li>
-              </ul>
-            </div>
+            <p class="meal-name">Avocado Salad</p>
+            <ul class="meal-list">
+              <li>
+                <i class="meal-icon bi bi-bookmark"></i
+                ><span>Category: <span class="tag">Vegan and Paleo</span></span>
+              </li>
+              <li>
+                <ion-icon name="flame-outline" class="meal-icon"></ion-icon>
+                <span> <strong>400</strong> Calories</span>
+              </li>
+              <li>
+                <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon
+                ><span>NutriScore &reg; <strong>92</strong></span>
+              </li>
+              <li>
+                <ion-icon class="meal-icon" name="thumbs-up-outline"></ion-icon
+                ><span><strong>4.8</strong> rating (441)</span>
+              </li>
+            </ul>
           </div>
-          <!-- <div class="diet-box">
+          <div class="diet-box">
             <p>diets:</p>
             <ul class="diet-list">
               <li>Vegetarian</li>
@@ -274,7 +260,7 @@
               <li>Low FODMAP</li>
               <li>Kid-friendly</li>
             </ul>
-          </div> -->
+          </div>
         </div>
       </section>
     </main>
