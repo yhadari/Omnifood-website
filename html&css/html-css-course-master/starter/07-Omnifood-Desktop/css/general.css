@@ -84,6 +84,12 @@ body {
   row-gap: 9.6rem;
 }
 
+.gallery-grid {
+  display: grid;
+  column-gap: 1.6rem;
+  row-gap: 3.2rem;
+}
+
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
