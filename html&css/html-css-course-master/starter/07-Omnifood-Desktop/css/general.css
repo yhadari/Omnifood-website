@@ -78,19 +78,13 @@ body {
   padding: 0 3.2rem;
 }
 
-.testimonial-container {
-  max-width: 130rem;
-  margin: 0 auto;
-  padding: 0 3.2rem;
-}
-
 .grid {
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
 }
 
-.testimonial-gallery-grid {
+.gallery-grid {
   display: grid;
   column-gap: 1.6rem;
   row-gap: 1.6rem;
