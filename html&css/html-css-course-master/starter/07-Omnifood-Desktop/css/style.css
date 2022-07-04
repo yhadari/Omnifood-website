@@ -348,10 +348,6 @@ html {
 /* TESTIMONIAL AND GALLERY */
 /**************************/
 
-.testimonial-section {
-  padding-bottom: 9.6rem;
-}
-
 .testimonial {
   background-color: #fdf2e9;
   display: grid;
@@ -447,40 +443,40 @@ html {
 /* PRICING SECTION */
 /**************************/
 
-.section-meals {
-  padding: 9.6rem;
+.pricing-section {
+  padding: 9.6rem 0;
 }
 
-.pricing-plan {
-  display: flex;
-  flex-direction: column;
-  gap: 3.2rem;
-}
-
-.plan-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2.4rem;
-}
-
-.plan-name {
-  font-size: 1.6rem;
-  font-weight: 600;
-  letter-spacing: 0.75px;
-  text-transform: uppercase;
-  color: #cf711f;
-}
-
+.pricing-plan,
+.plan-header,
 .plan-price {
   display: flex;
 }
 
+.pricing-plan {
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+.plan-header {
+  flex-direction: column;
+  align-items: center;
+}
+
+.plan-name {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: #cf711f;
+  margin-bottom: 3.2rem;
+}
 
 .price {
   font-size: 6.2rem;
   font-weight: 600;
   color: #333;
+  margin-bottom: 1.2rem;
 }
 
 .dollar-icon {
@@ -492,5 +488,9 @@ html {
 .plan-text {
   font-size: 1.4rem;
   line-height: 1.6;
-  color: #777;
+  color: #6f6f6f;
+}
+
+.plan-sign-up {
+  text-align: center;
 }
