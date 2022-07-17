@@ -468,15 +468,16 @@ html {
 
 .pricing-plan--complete::after {
   content: "BEST VALUE";
+  color: #333;
   font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 1px;
   position: absolute;
-  top: 5%;
-  right: -10%;
+  top: 6%;
+  right: -9%;
   transform: rotate(45deg);
-  background-color: yellow;
-  padding: 1.2rem 4.2rem;
+  background-color: #ffd43b;
+  padding: 0.8rem 3.8rem;
 }
 
 .pricing-plan {
@@ -523,6 +524,33 @@ html {
   text-align: center;
 }
 
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
 .list-icon.close-icon {
   color: rgb(198, 0, 0);
+}
+
+.feature-icon {
+  font-size: 3.2rem;
+  color: #e67e22;
+  margin-bottom: 3.2rem;
+  background-color: #fdf2e9;
+  border-radius: 50%;
+  padding: 1.6rem;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+  color: #333;
+  font-weight: 777;
+}
+
+.feature-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
 }
