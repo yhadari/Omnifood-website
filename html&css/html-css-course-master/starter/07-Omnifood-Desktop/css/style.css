@@ -257,7 +257,7 @@ html {
 
 .meal-box {
   box-shadow: 0px 0.8rem 2.4rem rgba(149, 157, 165, 0.2);
-  border-radius: 1.6rem;
+  border-radius: 1.2rem;
   overflow: hidden;
   transition: all 0.5s;
 }
@@ -453,9 +453,37 @@ html {
   display: flex;
 }
 
+.pricing-plan--starter {
+  justify-self: flex-end;
+  border: 2px solid #fdf2e9;
+  padding: 4.6rem;
+}
+
+.pricing-plan--complete {
+  background-color: #fdf2e9;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan--complete::after {
+  content: "BEST VALUE";
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 5%;
+  right: -10%;
+  transform: rotate(45deg);
+  background-color: yellow;
+  padding: 1.2rem 4.2rem;
+}
+
 .pricing-plan {
   flex-direction: column;
   gap: 4.8rem;
+  border-radius: 1.2rem;
+  width: 75%;
 }
 
 .plan-header {
@@ -493,4 +521,8 @@ html {
 
 .plan-sign-up {
   text-align: center;
+}
+
+.list-icon.close-icon {
+  color: rgb(198, 0, 0);
 }
