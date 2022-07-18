@@ -568,7 +568,6 @@ html {
   grid-template-columns: 2fr 1fr;
   box-shadow: 0px 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 1.2rem;
-  height: 50rem;
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
   overflow: hidden;
 }
@@ -579,7 +578,7 @@ html {
 }
 
 .cta .heading-secondary {
-  color: #45260a;
+  color: inherit;
   margin-bottom: 3.2rem;
 }
 
@@ -600,4 +599,35 @@ html {
   grid-template-columns: 1fr 1fr;
   column-gap: 3.2rem;
   row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 7px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  /* outline: 2px dotted #e67e22;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem hsla(27, 83%, 95%, 0.5);
 }
