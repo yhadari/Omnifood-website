@@ -410,7 +410,7 @@ html {
 }
 
 .gallery-box img:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
 
 /* animation */
@@ -570,10 +570,34 @@ html {
   border-radius: 1.2rem;
   height: 50rem;
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  overflow: hidden;
+}
+
+.cta-text-box {
+  color: #45260a;
+  padding: 3.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta .heading-secondary {
+  color: #45260a;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
 }
 
 .cta-img-box {
-  background-image: linear-gradient(to right bottom, hsla(28, 80%, 61%, 0.35), hsla(28, 80%, 52%, 0.35)), url(../img/eating.jpg);
+  background-image: linear-gradient(to right bottom, hsla(28, 80%, 61%, 0.3), hsla(28, 80%, 52%, 0.3)), url(../img/eating.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
 }

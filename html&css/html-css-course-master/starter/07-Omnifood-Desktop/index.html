@@ -18,7 +18,9 @@
   <!-- cdn for phosphoricons -->
   <script src="https://unpkg.com/phosphor-icons"></script>
   <!-- bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
 </head>
 
 <body>
@@ -414,12 +416,49 @@
     </section>
 
     <section class="section-cta">
-      <div class="container cta">
-        <div class="cta-text-box">CTA</div>
-        <div class="cta-img-box">Image</div>
+      <div class="container">
+        <div class="cta">
+          <div class="cta-text-box">
+            <h2 class="heading-secondary">Get your first meal for free!</h2>
+            <p class="cta-text">Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You
+              can cancel or pause anytime. And the first meal is on us!</p>
+            <form class="cta-form" action="#">
+              <div>
+                <label for="full-name">Full Name</label>
+                <input id="full-name" type="text" placeholder="Hadari Yassine" required>
+              </div>
+              <div>
+                <label for="email">Email Address</label>
+                <input id="email" type="email" placeholder="me.example.com" required>
+              </div>
+              <div>
+                <label for="select-where">Where did you here from us?</label>
+                <select id="select-where" required>
+                  <option value="">Please choose one option:</option>
+                  <option value="friends">Friends and family</option>
+                  <option value="youtube">YouTube vedio</option>
+                  <option value="podcast">Podcast</option>
+                  <option value="facbook">Facbook ads</option>
+                  <option value="others">Others</option>
+                </select>
+              </div>
+              <button class="btn">Sign up now</button>
+              <!-- <input type="checkbox">
+              <input type="number"> -->
+            </form>
+          </div>
+          <div class="cta-img-box" role="img" aria-label="Woman enjoying food"></div>
+        </div>
       </div>
     </section>
   </main>
+  <!-- bootstrap -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script> -->
 </body>
 
 </html>
