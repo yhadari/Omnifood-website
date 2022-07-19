@@ -25,14 +25,16 @@
 
 <body>
   <header class="header">
-    <img class="logo" src="img/omnifood-logo.png" alt="omnifood-logo" />
+    <a href="#">
+      <img class="logo" src="img/omnifood-logo.png" alt="omnifood-logo" />
+    </a>
     <nav class="main-nav">
       <ul class="main-nav-list">
-        <li><a href="#" class="main-nav-link">How it works</a></li>
+        <li><a href="#how-it-work" class="main-nav-link">How it works</a></li>
         <li><a href="#meals" class="main-nav-link">Meals</a></li>
         <li><a href="#testimonial" class="main-nav-link">Testimonials</a></li>
         <li><a href="#pricing" class="main-nav-link">Pricing</a></li>
-        <li><a href="#" class="main-nav-link nav-cta">Try for free</a></li>
+        <li><a href="#cta" class="main-nav-link nav-cta">Try for free</a></li>
       </ul>
     </nav>
   </header>
@@ -49,8 +51,8 @@
             eat healthy again. Tailored to your personal tastes and
             nutritional needs. We have delivered 250,000+ meals last year!
           </p>
-          <a class="btn btn--full margin-right-sm" href="#">start eating well</a>
-          <a href="#" class="btn btn--outline">Learn more &darr;</a>
+          <a class="btn btn--full margin-right-sm" href="#cta">start eating well</a>
+          <a href="#how-it-work" class="btn btn--outline">Learn more &darr;</a>
           <div class="delivered-meals">
             <div class="delivered-imgs">
               <img src="img/customers/customer-1.jpg" alt="customer photo" />
@@ -86,7 +88,7 @@
       </div>
     </section>
 
-    <section class="section-how">
+    <section class="section-how" id="how-it-work">
       <div class="container">
         <span class="subheading">How it work</span>
         <h2 class="heading-secondary">
@@ -415,7 +417,7 @@
       </div>
     </section>
 
-    <section class="section-cta">
+    <section class="section-cta" id="cta">
       <div class="container">
         <div class="cta">
           <div class="cta-text-box">
@@ -452,6 +454,66 @@
       </div>
     </section>
   </main>
+  <footer class="footer">
+    <div class="container grid grid--5-cols">
+      <div class="col">
+        <a href="#">
+          <img class="logo" src="img/omnifood-logo.png" alt="omnifood-logo" />
+        </a>
+        <ul class="social-links">
+          <li> <a class="social-link" href="">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li> <a class="social-link" href="">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+          <li> <a class="social-link" href="">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li> <a class="social-link" href="">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+        </ul>
+        <p class="copyright-text">Copyright &copy; 2027 by Omnifood</p>
+      </div>
+      <div class="col">
+        <p class="footer-heading">Contact us</p>
+        <address class="contacts">
+          <p>623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+          <p>
+            <a href="tel:415-201-6370">415-201-6370</a> <br>
+            <a href="mailto:hello@omnifood.com">hello@omnifood.com</a>
+          </p>
+        </address>
+      </div>
+      <div class="col">
+        <p class="footer-heading">Acount</p>
+        <ul class="footer-list">
+          <li> <a class="footer-link" href="#">Create account</a></li>
+          <li> <a class="footer-link" href="#">Sign in</a></li>
+          <li> <a class="footer-link" href="#">iOS app</a></li>
+          <li> <a class="footer-link" href="#">Android app</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <p class="footer-heading">Company</p>
+        <ul class="footer-list">
+          <li> <a class="footer-link" href="#">About Omnifood</a></li>
+          <li> <a class="footer-link" href="#">For Business</a></li>
+          <li> <a class="footer-link" href="#">Cooking partners</a></li>
+          <li> <a class="footer-link" href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <p class="footer-heading">Policy</p>
+        <ul class="footer-list">
+          <li> <a class="footer-link" href="#">Recipe directory</a></li>
+          <li> <a class="footer-link" href="#">Help center</a></li>
+          <li> <a class="footer-link" href="#">Privacy & terms</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
   <!-- bootstrap -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"

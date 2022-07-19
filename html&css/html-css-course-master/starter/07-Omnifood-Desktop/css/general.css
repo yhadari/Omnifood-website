@@ -30,6 +30,7 @@
     Greys: #555
     #333
      #6f6f6f (lightest grey allowed on #fdf2e9)
+     #767676
   
     
 --- 05 SHADOWS
@@ -115,6 +116,10 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .grid--center-v {
   align-items: center;
 }
@@ -182,7 +187,6 @@ body {
 .btn--full:hover,
 .btn--full:active {
   background-color: #cf711f;
-  /* transition: 2s; */
 }
 
 .btn--outline:link,
@@ -256,7 +260,7 @@ body {
   outline: none;
   /* outline: 2px dotted #e67e22;
   outline-offset: 8px; */
-  box-shadow: 0 0 0 0.8rem hsla(28, 80%, 52%, 0.5);
+  box-shadow: 0 0 0 0.4rem hsla(28, 80%, 52%, 0.5);
 }
 
 /* HELPER/SETTING CLASSES */
