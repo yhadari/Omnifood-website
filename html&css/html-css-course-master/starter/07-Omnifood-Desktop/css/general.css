@@ -64,6 +64,7 @@ html {
   /* font-size: 10px; */
   /* 16px * 62.5 / 100 = 10px */
   /* Percentage of user's browser font-size setting */
+  scroll-behavior: smooth;
   font-size: 62.5%;
 }
 
