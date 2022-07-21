@@ -57,10 +57,10 @@
 
 html {
   /* font-size: 10px; */
-  /* 16px * 62.5 / 100 = 10px */
+  /* 10px / 16px = 0.625 = 62.5% */
   /* Percentage of user's browser font-size setting */
-  scroll-behavior: smooth;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -93,6 +93,7 @@ body {
 
 .gallery-grid {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 1.6rem;
   row-gap: 1.6rem;
 }
