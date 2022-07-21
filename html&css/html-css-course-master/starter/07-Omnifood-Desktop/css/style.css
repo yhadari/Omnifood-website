@@ -98,7 +98,7 @@
 }
 
 .delivered-meals {
-  /* display: flex; */
+  display: flex;
   margin-top: 8rem;
   align-items: center;
   gap: 1.6rem;
@@ -355,14 +355,16 @@
 }
 
 .img-box {
-  /* this line with animation */
-  position: relative;
   overflow: hidden;
+
+  /* this line with animation */
+  /* position: relative; */
 }
 
 .gallery-box img {
   /* img is a inline element by default */
   display: block;
+
   width: 100%;
   transition: all 0.5s;
 }
@@ -528,9 +530,9 @@
 
 .cta {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  /* box-shadow: 0px 2.4rem 4.8rem rgba(0, 0, 0, 0.15); */
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  grid-template-columns: 65% 35%;
+  box-shadow: 0px 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
   border-radius: 1.2rem;
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
   overflow: hidden;
@@ -541,7 +543,7 @@
   padding: 3.8rem 6.4rem 6.4rem 6.4rem;
 }
 
-.cta .heading-secondary {
+.cta-text-box .heading-secondary {
   color: inherit;
   margin-bottom: 3.2rem;
 }
@@ -553,7 +555,7 @@
 }
 
 .cta-img-box {
-  background-image: linear-gradient(to right bottom, hsla(28, 80%, 61%, 0.3), hsla(28, 80%, 52%, 0.3)), url(../img/eating.jpg);
+  background-image: linear-gradient(hsla(28, 80%, 61%, 0.35), hsla(28, 80%, 52%, 0.35)), url(../img/eating.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -590,9 +592,6 @@
 }
 
 .cta *:focus {
-  outline: none;
-  /* outline: 2px dotted #e67e22;
-  outline-offset: 8px; */
   box-shadow: 0 0 0 0.4rem hsla(27, 83%, 95%, 0.5);
 }
 
@@ -619,7 +618,6 @@
   font-size: 2rem;
   font-weight: 600;
   color: #555;
-  /* margin-bottom: 1.2rem; */
 }
 
 .footer-list {
@@ -634,7 +632,6 @@
   font-size: 1.4rem;
   text-decoration: none;
   color: #767676;
-  /* transition: all 0.2s; */
 }
 
 .footer-link:hover,
@@ -652,21 +649,22 @@
 .social-links li {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 2.2rem;
   width: 2.2rem;
 }
 
 .social-link:link,
 .social-link:visited {
-  font-size: 2.6rem;
-  color: #555;
+  font-size: 2.8rem;
+  color: #777;
+  transition: all 0.3s;
 }
 
 .social-link:hover,
 .social-link:active {
-  /* font-size: 2.8rem; */
   transform: scale(1.12);
-  color: #333;
+  color: #555;
 }
 
 .contacts {
@@ -683,7 +681,8 @@
   font-size: 1.2rem;
   line-height: 1.6rem;
   color: #767676;
-  /* to remove margin from bottom */
+
+  /* to mv element to the bottom */
   margin-top: auto;
 }
 
