@@ -184,7 +184,7 @@ instead, 1rem = 1em = 16px */
   }
 
   .meal-content {
-    padding: 1.6rem;
+    padding: 1.8rem;
   }
 
   .cta {
@@ -218,7 +218,7 @@ instead, 1rem = 1em = 16px */
   }
 
   .meal-content {
-    padding: 6.4rem 3.2rem;
+    padding: 3.2rem;
   }
 
   .diet-box {
@@ -232,7 +232,6 @@ instead, 1rem = 1em = 16px */
 
   .pricing-plan {
     width: 100%;
-
   }
 
   .grid--footer {
@@ -312,6 +311,14 @@ instead, 1rem = 1em = 16px */
     gap: 1.2rem;
   }
 
+  .pricing-plan {
+    width: 65%;
+  }
+
+  .pricing-plan {
+    justify-self: center;
+  }
+
   .cta {
     grid-template-columns: 1fr;
   }
@@ -328,22 +335,6 @@ instead, 1rem = 1em = 16px */
   .cta-text-box .heading-secondary {
     text-align: center;
   }
-
-  /* .step-img {
-    width: 25%;
-  }
-
-  .step-img-box::after {
-    background-color: #f5cba7;
-    width: 30%;
-    padding-bottom: 30%;
-  }
-
-  .step-img-box::before {
-    background-color: #fae5d3;
-    width: 40%;
-    padding-bottom: 40%;
-  } */
 
 }
 
