@@ -8,7 +8,7 @@ instead, 1rem = 1em = 16px */
 /* BELLOW 1344px (Smaller desktop) */
 /**************************/
 
-@media (max-width: 84rem) {
+@media (max-width: 84em) {
 
   .hero {
     max-width: 120rem;
@@ -29,7 +29,7 @@ instead, 1rem = 1em = 16px */
 /* BELLOW 1200px (Landscape tablets) */
 /**************************/
 
-@media (max-width: 75rem) {
+@media (max-width: 75em) {
 
   html {
     /* 9px / 16px */
@@ -76,7 +76,7 @@ instead, 1rem = 1em = 16px */
 /* BELLOW 944px (Tablets) */
 /**************************/
 
-@media (max-width: 59rem) {
+@media (max-width: 59em) {
 
   html {
     /* 8px / 16px */
@@ -206,7 +206,7 @@ instead, 1rem = 1em = 16px */
 /* BELLOW 800px (Smaller Tablets) */
 /**************************/
 
-@media (max-width: 50rem) {
+@media (max-width: 50em) {
 
   .heading-secondary {
     margin-bottom: 4.8rem;
@@ -256,7 +256,7 @@ instead, 1rem = 1em = 16px */
 /* BELLOW 608px (Phones) */
 /**************************/
 
-@media (max-width: 38rem) {
+@media (max-width: 38em) {
 
   .grid--2-cols,
   .grid--3-cols,
@@ -312,7 +312,7 @@ instead, 1rem = 1em = 16px */
   }
 
   .pricing-plan {
-    width: 65%;
+    width: 75%;
   }
 
   .pricing-plan {
