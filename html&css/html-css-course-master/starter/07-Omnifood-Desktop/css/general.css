@@ -253,7 +253,7 @@ body {
 
 *:focus {
   outline: none;
-  box-shadow: 0 0 0 0.4rem hsla(28, 80%, 52%, 0.5);
+  box-shadow: 0 0 0 0.8rem hsla(28, 80%, 52%, 0.5);
   /* outline: 2px dotted #e67e22;
   outline-offset: 8px; */
 }

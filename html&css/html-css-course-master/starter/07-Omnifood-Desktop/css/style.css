@@ -38,7 +38,6 @@
 .main-nav-link:visited {
   display: inline-block;
   font-size: 1.8rem;
-  border-radius: 0.8rem;
   font-weight: 500;
   color: #333;
   text-decoration: none;
@@ -55,6 +54,7 @@
 .nav-cta:visited {
   background-color: #e67e22;
   color: #fff;
+  border-radius: 0.8rem;
   padding: 1.2rem 2.4rem;
   display: inline-block;
   font-weight: 600;
@@ -76,11 +76,8 @@
 }
 
 .icon-mobile-nav {
-  font-size: 4.8rem;
+  font-size: 4.4rem;
   color: #333;
-  position: absolute;
-  top: 2.2rem;
-  right: 2.2rem;
 }
 
 .icon-mobile-nav[name="close-outline"] {
