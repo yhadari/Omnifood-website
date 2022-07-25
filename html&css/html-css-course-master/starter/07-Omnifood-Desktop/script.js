@@ -2,31 +2,29 @@
 // Get the current year
 var yearEL = document.querySelector(".year");
 var currentYear = new Date().getFullYear();
-console.log(currentYear);
 yearEL.textContent = currentYear;
 
 //////////////////////////////////////////////////////////
 // Make mobile Navigation work
 
-// my code
-// var headerEl = document.querySelector(".header");
-// console.log(headerEl);
-
-// var btnNavEl = document.getElementsByClassName("icon-mobile-nav");
-// btnNavEl[0].addEventListener("click", function () {
-//   headerEl.classList.add("nav-open");
-// });
-// btnNavEl[1].addEventListener("click", function () {
-//   headerEl.classList.remove("nav-open");
-// });
-
-// corse code
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
+
+// Smoth scroling
+
+const links = document.querySelectorAll(".btn--full");
+for (const link of links) {
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
+    const target = event.target;
+    const id = target.getAttribute("href").slice(1);
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  });
+}
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
