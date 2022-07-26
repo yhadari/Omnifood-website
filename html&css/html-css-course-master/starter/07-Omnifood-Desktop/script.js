@@ -14,15 +14,19 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
+//////////////////////////////////////////////////////////
 // Smoth scroling
 
-const links = document.querySelectorAll(".btn--full");
+const links = document.querySelectorAll("a:link");
 for (const link of links) {
   link.addEventListener("click", function (event) {
     event.preventDefault();
-    const target = event.target;
-    const id = target.getAttribute("href").slice(1);
-    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    const href = link.getAttribute("href");
+    if (href === "#") window.scrollTo({ top: 0, behavior: "smooth" });
+    else if (href.startsWith("#"))
+      document
+        .getElementById(href.slice(1))
+        .scrollIntoView({ behavior: "smooth" });
   });
 }
 
