@@ -32,6 +32,26 @@ for (const link of links) {
 }
 
 //////////////////////////////////////////////////////////
+// Sticky navigation
+window.addEventListener("scroll", function () {
+  const heroSection = document.querySelector(".section-hero");
+
+  var top_of_element = heroSection.offsetTop;
+  var bottom_of_element =
+    heroSection.offsetTop +
+    heroSection.offsetHeight +
+    heroSection.style.marginTop;
+  var bottom_of_screen = window.scrollY + window.innerHeight;
+  var top_of_screen = window.scrollY;
+
+  if (bottom_of_screen > top_of_element && top_of_screen < bottom_of_element) {
+    headerEl.classList.remove("sticky");
+  } else {
+    headerEl.classList.add("sticky");
+  }
+});
+
+//////////////////////////////////////////////////////////
 // Close mobile navigation
 // const navLink = document.querySelectorAll(".main-nav a:link");
 // const header = document.querySelector(".header");

@@ -121,6 +121,8 @@ instead, 1rem = 1em = 16px */
     pointer-events: auto;
     visibility: visible;
     transform: translateX(0);
+    position: fixed;
+    z-index: 9999;
   }
 
   .nav-open .icon-mobile-nav[name="close-outline"] {
