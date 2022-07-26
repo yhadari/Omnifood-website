@@ -6,7 +6,6 @@ yearEL.textContent = currentYear;
 
 //////////////////////////////////////////////////////////
 // Make mobile Navigation work
-
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 
@@ -16,7 +15,6 @@ btnNavEl.addEventListener("click", function () {
 
 //////////////////////////////////////////////////////////
 // Smoth scroling
-
 const links = document.querySelectorAll("a:link");
 for (const link of links) {
   link.addEventListener("click", function (event) {
@@ -27,8 +25,21 @@ for (const link of links) {
       document
         .getElementById(href.slice(1))
         .scrollIntoView({ behavior: "smooth" });
+    // Close mobile navigation
+    if (link.classList.contains("main-nav-link"))
+      headerEl.classList.remove("nav-open");
   });
 }
+
+//////////////////////////////////////////////////////////
+// Close mobile navigation
+// const navLink = document.querySelectorAll(".main-nav a:link");
+// const header = document.querySelector(".header");
+// navLink.forEach(function (link) {
+//   link.addEventListener("click", function () {
+//     header.classList.remove("nav-open");
+//   });
+// });
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
