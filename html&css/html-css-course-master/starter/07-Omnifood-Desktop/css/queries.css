@@ -89,7 +89,7 @@ instead, 1rem = 1em = 16px */
   }
 
   .main-nav-list {
-    background-color: hsla(0, 0%, 100%, 0.95);
+    background-color: hsla(0, 0%, 100%, 0.9);
     position: absolute;
     top: 0;
     left: 0;
@@ -117,6 +117,8 @@ instead, 1rem = 1em = 16px */
   }
 
   .nav-open .main-nav-list {
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
@@ -348,3 +350,62 @@ instead, 1rem = 1em = 16px */
 
 SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+
+/**************************/
+/* Fixing safari flexbox gap */
+/**************************/
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .delivered-meals div:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-list li:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+
+.no-flexbox-gap .meal-list li ion-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-tag span:not(:last-child) {
+  margin-right: 0.6rem;
+}
+
+.no-flexbox-gap .pricing-plan header {
+  margin-bottom: 4.8rem;
+}
+
+.no-flexbox-gap .pricing-plan ul {
+  margin-bottom: 4.8rem;
+}
+
+.no-flexbox-gap .col a,
+.no-flexbox-gap .col ul {
+  margin-bottom: 4.2rem;
+}
+
+.no-flexbox-gap .footer-list li:not(:last-child) {
+  margin-bottom: 2.2rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 3.2rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}
