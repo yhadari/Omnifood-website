@@ -157,7 +157,7 @@ instead, 1rem = 1em = 16px */
     width: 50%;
   }
 
-  .hero-img-box {
+  .hero-img-box picture {
     display: flex;
     justify-content: center;
   }
